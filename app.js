@@ -9,7 +9,6 @@ const getCountries = (data) => {
     } = countries;
     const selectMenu = document.querySelector("#selected-country");
     selectMenu.innerHTML += `<option>${common}</option>`;
-    console.log(countries);
   });
 
   document
@@ -27,7 +26,6 @@ const getCountries = (data) => {
           region,
         } = data;
         if (common == e.target.value) {
-          console.log(common);
           const cardDiv = document.querySelector(".card");
           cardDiv.innerHTML = `<img src="${svg}" class="card-img-top">
           <div class="card-body">
